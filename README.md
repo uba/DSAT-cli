@@ -70,3 +70,9 @@ dsat-cli.py -p true_color_ch13_dsa -d 202111121200 -i 18 -l 6 --tiles-extent 34 
 dsat-cli.py -p ch02 -d 202111091200 -i 18 -l 7 --tiles-extent 63 55 63 55 -o brasilia-l7-anim.gif
 ```
 <img src="examples/brasilia-l7-anim.gif" width="300px"/>
+
+## License
+Copyright (C) 2020-2021 INPE.
+
+DSAT-Cli is free software; you can redistribute it and/or modify it
+under the terms of the MIT License; see LICENSE file for more details.
