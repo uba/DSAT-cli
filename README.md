@@ -20,7 +20,7 @@ the DSAT web interface, specifically:
 
 ## Usage
 ```
-dsat.cli.py --help
+dsat-cli.py --help
 usage: dsat-cli [-h] --product PRODUCT --date DATE [-i I] [--time-step TIME] --level {2,3,4,5,6,7}
                 [--tiles-extent xmin ymin xmax xmax] [--speed SPEED] --output OUTPUT [--verbose] [--version]
 
