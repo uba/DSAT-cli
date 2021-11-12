@@ -19,3 +19,23 @@ the DSAT web interface, specifically:
 - Limited options for features like time-step and speed
 
 ## Example Usage
+
+```bash
+# Donwload single image (2021/11/12 - 12:00 UTC) Full-disk at level 2
+./dsat-cli.py -p true_color_ch13_dsa -d 202111121200 -i 1 -l 2 -o full-disk.png
+```
+
+```bash
+# Donwload animation (Start 2021/11/12 - 12:00 UTC + 17 images, step 10 min) Brazil at level 4
+./dsa-cli.py -p true_color_ch13_dsa -d 202111121200 -i 18 -l 4 --tiles-extent 5 4 9 8 -o brazil-l4-anim.gif
+```
+
+```bash
+# Donwload animation (Start 2021/11/12 - 12:00 UTC + 17 images, step 10 min) Fortaleza - CE at level 6
+./dsa-cli.py -p true_color_ch13_dsa -d 202111121200 -i 18 -l 6 --tiles-extent 34 22 35 23 -o fortaleza-l4-anim.gif
+```
+
+```bash
+# Donwload animation (Start 2021/11/12 - 12:00 UTC + 17 images, step 10 min) Brasília - DF at level 7
+./dsa-cli.py -p ch02 -d 202111091200 -i 18 -l 7 --tiles-extent 63 55 63 55 -o brasilia-l7-anim.gif
+```
