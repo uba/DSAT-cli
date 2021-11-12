@@ -18,6 +18,33 @@ the DSAT web interface, specifically:
 - Web browser may crash for complex animations
 - Limited options for features like time-step and speed
 
+## Usage
+```
+dsat.cli.py --help
+usage: dsat-cli [-h] --product PRODUCT --date DATE [-i I] [--time-step TIME] --level {2,3,4,5,6,7}
+                [--tiles-extent xmin ymin xmax xmax] [--speed SPEED] --output OUTPUT [--verbose] [--version]
+
+DSAT-Cli. Copyright (C) 2021-2022 INPE.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --product PRODUCT, -p PRODUCT
+                        Product that will be retrieved
+  --date DATE, -d DATE  Desired image datetime. Format: YYYYMMDDhhmm
+  -i I                  Number of images that will be requested from the given date as start.
+  --time-step TIME, -t TIME
+                        Interval of image capture times in minutes. (default 10)
+  --level {2,3,4,5,6,7}, -l {2,3,4,5,6,7}
+                        Level (zoom) that will be retrieved
+  --tiles-extent xmin ymin xmax xmax
+                        Optional tiles extent
+  --speed SPEED         Frame rate, i.e. time between two consecutive frames. Default: 0.5 (in seconds)
+  --output OUTPUT, -o OUTPUT
+                        Output filename to save resut
+  --verbose             Increase output verbosity
+  --version, -v         show program's version number and exit
+```
+
 ## Example Usage
 
 ```bash
