@@ -17,7 +17,8 @@ class Config:
         3 : range(0, 6),
         4 : range(0, 11),
         5 : range(0, 22),
-        6 : range(0, 43)
+        6 : range(0, 43),
+        7 : range(0, 84)
     }
     addReferences = True
     references = ['countries', 'labels']
