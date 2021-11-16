@@ -44,6 +44,14 @@ Ch13 (IR4AVHRR6) | Ch13 (DSA)
 --- | ---
 <img src="examples/ch13_cpt_IR4AVHRR6.png" width="200px"/> | <img src="examples/ch13_cpt_DSA.png" width="200px"/>
 
+Airmass | Ash | Cloud Phase (Eumetsat) | Cloud Phase (JMA)
+--- | --- | --- |---
+<img src="examples/airmass.png" width="200px"/> | <img src="examples/ash.png" width="200px"/> | <img src="examples/cloud_phase_eumetsat.png" width="200px"/> | <img src="examples/day_cloud_phase_jma.png" width="200px"/>
+
+Convective Storm | Day Snow Fog | Differential WV | Dust
+--- | --- | --- |---
+<img src="examples/convective_storm.png" width="200px"/> | <img src="examples/day_snow_fog.png" width="200px"/> | <img src="examples/differential_wv.png" width="200px"/> | <img src="examples/dust.png" width="200px"/>
+
 ## Usage
 ```
 dsat-cli.py --help
