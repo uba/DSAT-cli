@@ -26,5 +26,6 @@ class Config:
     optimizeGif = True
     useCache = True
     cacheDir = '.cache/'
+    defaultProduct = 'true_color_ch13_dsa'
 
 Config = Config()

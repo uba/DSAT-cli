@@ -5,6 +5,7 @@
 import argparse
 from datetime import datetime
 from dsat.config import Config
+from dsat.product import Catalog
 from dsat.request import getImage, getImages
 from dsat.utils import buildDates, exportAnimation, generateTileSequence
 from dsat.version import __version__
@@ -22,10 +23,10 @@ if __name__ == '__main__':
     #> Product
     # TODO: build product informations.
     parser.add_argument('--product', '-p', help='Product that will be retrieved',
-        type=str, dest='product', required=True)
+        type=str, dest='product', choices=Catalog.getProducts(), default=Config.defaultProduct, required=False)
     #> Date
     parser.add_argument('--date', '-d', help='Desired image datetime. Format: YYYYMMDDhhmm',
-        type=isValidDate, dest='date', required=True)
+        type=isValidDate, dest='date', default=datetime.now().strftime('%Y%m%d0000'), required=False)
     #> Image count
     parser.add_argument('-i', help='Number of images that will be requested from the given date as start.',
         type=int, dest='i', default=6, required=False)
@@ -34,10 +35,10 @@ if __name__ == '__main__':
         type=int, dest='time', default=10, required=False)
     #> Level
     parser.add_argument('--level', '-l', help='Level (zoom)  that will be retrieved',
-        type=int, dest='level', choices=Config.tilesLocation.keys(), required=True)
+        type=int, dest='level', choices=Config.tilesLocation.keys(), default=2, required=False)
     #> Tiles-extent
     parser.add_argument('--tiles-extent', help='Optional tiles extent',
-        nargs=4, metavar=('xmin', 'ymin', 'xmax', 'xmax'),
+        nargs=4, metavar=('xmin', 'ymin', 'xmax', 'ymax'),
         type=int, dest='extent', default=None, required=False)
     #> Speed-animation
     parser.add_argument('--speed', help='Frame rate, i.e. time between two consecutive frames. Default: 0.5 (in seconds)',
@@ -53,6 +54,12 @@ if __name__ == '__main__':
 
     # Parse input
     args = parser.parse_args()
+
+    # Verify level and product
+    if(args.level > Catalog.getProduct(args.product).maxLevel):
+        print('The maximum level of product {} is {}. Try again.'.format(
+            args.product, Catalog.getProduct(args.product).maxLevel))
+        exit(0)
 
     # Setup verbose
     if args.verbose:
@@ -84,7 +91,6 @@ if __name__ == '__main__':
 
     log.info('Using cache: ' + str(Config.useCache))
 
-    # TODO: use tqdm for progress bar indicator
     # Let's go!
     images = getImages(dates, args.product, args.level, tilesx, tilesy)
     log.info('Saving result to file: ' + args.output)
