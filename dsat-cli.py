@@ -9,7 +9,7 @@ import argparse
 from datetime import datetime
 from dsat.config import Config
 from dsat.product import Catalog
-from dsat.request import getImage, getImages
+from dsat.request import getImages
 from dsat.utils import buildDates, exportAnimation, generateTileSequence
 from dsat.version import __version__
 import logging as log
