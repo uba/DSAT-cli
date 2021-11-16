@@ -18,6 +18,24 @@ the DSAT web interface, specifically:
 - Web browser may crash for complex animations
 - Limited options for features like time-step and speed
 
+## Products
+
+Ch01 | Ch02 | Ch03 | Ch04
+--- | --- | --- |---
+<img src="examples/ch01.png" width="200px"/> | <img src="examples/ch02.png" width="200px"/> | <img src="examples/ch03.png" width="200px"/> | <img src="examples/ch04.png" width="200px"/>
+
+Ch05 | Ch06 | Ch07 | Ch08
+--- | --- | --- |---
+<img src="examples/ch05.png" width="200px"/> | <img src="examples/ch06.png" width="200px"/> | <img src="examples/ch07.png" width="200px"/> | <img src="examples/ch08.png" width="200px"/>
+
+Ch09 | Ch10 | Ch11 | Ch12
+--- | --- | --- |---
+<img src="examples/ch09.png" width="200px"/> | <img src="examples/ch10.png" width="200px"/> | <img src="examples/ch11.png" width="200px"/> | <img src="examples/ch12.png" width="200px"/>
+
+Ch13 | Ch14 | Ch15 | Ch16
+--- | --- | --- |---
+<img src="examples/ch13.png" width="200px"/> | <img src="examples/ch14.png" width="200px"/> | <img src="examples/ch15.png" width="200px"/> | <img src="examples/ch16.png" width="200px"/>
+
 ## Usage
 ```
 dsat-cli.py --help
