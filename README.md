@@ -36,6 +36,14 @@ Ch13 | Ch14 | Ch15 | Ch16
 --- | --- | --- |---
 <img src="examples/ch13.png" width="200px"/> | <img src="examples/ch14.png" width="200px"/> | <img src="examples/ch15.png" width="200px"/> | <img src="examples/ch16.png" width="200px"/>
 
+Ch08 (WVCOLOR35) | Ch09 (WVCOLOR35) | Ch10 (WVCOLOR35)
+--- | --- | ---
+<img src="examples/ch08_cpt_WVCOLOR35.png" width="200px"/> | <img src="examples/ch09_cpt_WVCOLOR35.png" width="200px"/> | <img src="examples/ch10_cpt_WVCOLOR35.png" width="200px"/>
+
+Ch13 (IR4AVHRR6) | Ch13 (DSA)
+--- | ---
+<img src="examples/ch13_cpt_IR4AVHRR6.png" width="200px"/> | <img src="examples/ch13_cpt_DSA.png" width="200px"/>
+
 ## Usage
 ```
 dsat-cli.py --help
