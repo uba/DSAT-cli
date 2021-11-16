@@ -52,6 +52,14 @@ Convective Storm | Day Snow Fog | Differential WV | Dust
 --- | --- | --- |---
 <img src="examples/convective_storm.png" width="200px"/> | <img src="examples/day_snow_fog.png" width="200px"/> | <img src="examples/differential_wv.png" width="200px"/> | <img src="examples/dust.png" width="200px"/>
 
+Fire Temperature | Natural Color | Night Microphysics | Simple WV
+--- | --- | --- |---
+<img src="examples/fire_temperature.png" width="200px"/> | <img src="examples/natural_color.png" width="200px"/> | <img src="examples/night_microphysics.png" width="200px"/> | <img src="examples/simple_wv.png" width="200px"/>
+
+SO2 | True-color + Ch13 (DSA)
+--- | --- 
+<img src="examples/so2.png" width="200px"/> | <img src="examples/true_color_ch13_dsa.png" width="200px"/>
+
 ## Usage
 ```
 dsat-cli.py --help
