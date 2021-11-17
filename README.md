@@ -18,6 +18,48 @@ the DSAT web interface, specifically:
 - Web browser may crash for complex animations
 - Limited options for features like time-step and speed
 
+## Products
+
+Ch01 | Ch02 | Ch03 | Ch04
+--- | --- | --- |---
+<img src="examples/ch01.png" width="200px"/> | <img src="examples/ch02.png" width="200px"/> | <img src="examples/ch03.png" width="200px"/> | <img src="examples/ch04.png" width="200px"/>
+
+Ch05 | Ch06 | Ch07 | Ch08
+--- | --- | --- |---
+<img src="examples/ch05.png" width="200px"/> | <img src="examples/ch06.png" width="200px"/> | <img src="examples/ch07.png" width="200px"/> | <img src="examples/ch08.png" width="200px"/>
+
+Ch09 | Ch10 | Ch11 | Ch12
+--- | --- | --- |---
+<img src="examples/ch09.png" width="200px"/> | <img src="examples/ch10.png" width="200px"/> | <img src="examples/ch11.png" width="200px"/> | <img src="examples/ch12.png" width="200px"/>
+
+Ch13 | Ch14 | Ch15 | Ch16
+--- | --- | --- |---
+<img src="examples/ch13.png" width="200px"/> | <img src="examples/ch14.png" width="200px"/> | <img src="examples/ch15.png" width="200px"/> | <img src="examples/ch16.png" width="200px"/>
+
+Ch08 (WVCOLOR35) | Ch09 (WVCOLOR35) | Ch10 (WVCOLOR35)
+--- | --- | ---
+<img src="examples/ch08_cpt_WVCOLOR35.png" width="200px"/> | <img src="examples/ch09_cpt_WVCOLOR35.png" width="200px"/> | <img src="examples/ch10_cpt_WVCOLOR35.png" width="200px"/>
+
+Ch13 (IR4AVHRR6) | Ch13 (DSA)
+--- | ---
+<img src="examples/ch13_cpt_IR4AVHRR6.png" width="200px"/> | <img src="examples/ch13_cpt_DSA.png" width="200px"/>
+
+Airmass | Ash | Cloud Phase (Eumetsat) | Cloud Phase (JMA)
+--- | --- | --- |---
+<img src="examples/airmass.png" width="200px"/> | <img src="examples/ash.png" width="200px"/> | <img src="examples/cloud_phase_eumetsat.png" width="200px"/> | <img src="examples/day_cloud_phase_jma.png" width="200px"/>
+
+Convective Storm | Day Snow Fog | Differential WV | Dust
+--- | --- | --- |---
+<img src="examples/convective_storm.png" width="200px"/> | <img src="examples/day_snow_fog.png" width="200px"/> | <img src="examples/differential_wv.png" width="200px"/> | <img src="examples/dust.png" width="200px"/>
+
+Fire Temperature | Natural Color | Night Microphysics | Simple WV
+--- | --- | --- |---
+<img src="examples/fire_temperature.png" width="200px"/> | <img src="examples/natural_color.png" width="200px"/> | <img src="examples/night_microphysics.png" width="200px"/> | <img src="examples/simple_wv.png" width="200px"/>
+
+SO2 | True-color + Ch13 (DSA)
+--- | --- 
+<img src="examples/so2.png" width="200px"/> | <img src="examples/true_color_ch13_dsa.png" width="200px"/>
+
 ## Usage
 ```
 dsat-cli.py --help
