@@ -1,9 +1,9 @@
 # DSAT-cli
 A command-line implementation of the DSAT/INPE tool in Python.
-This tool downloads images and products taken by the GOES-16 satellite, processed by National Institute for Space Research ([INPE](www.inpe.br))
+This tool downloads images and products taken by the GOES-16 satellite, processed by National Institute for Space Research ([INPE](http://www.inpe.br))
 and creates animations/GIFs from those images. See an example below.
 
-[DSAT](www.cptec.inpe.br/dsat) is the INPE's GOES-16 satellite image viewer application. Visit www.cptec.inpe.br/dsat 🌎🛰️
+[DSAT](http://www.cptec.inpe.br/dsat) is the INPE's GOES-16 satellite image viewer application. Visit www.cptec.inpe.br/dsat 🌎🛰️
 
 **Note:** DSAT-cli implementation is inspired by https://github.com/colinmcintosh/SLIDER-cli and [@colinmcintosh](https://github.com/colinmcintosh).
 
