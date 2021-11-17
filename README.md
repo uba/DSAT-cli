@@ -17,7 +17,7 @@ the DSAT web interface, specifically:
 - Slow to generate animations
 - Web browser may crash for complex animations
 - Limited options for features like time-step and speed
-- 
+
 ## Products
 
 Ch01 | Ch02 | Ch03 | Ch04
