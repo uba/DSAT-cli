@@ -17,7 +17,7 @@ the DSAT web interface, specifically:
 - Slow to generate animations
 - Web browser may crash for complex animations
 - Limited options for features like time-step and speed
-
+- 
 ## Products
 
 Ch01 | Ch02 | Ch03 | Ch04
@@ -59,6 +59,20 @@ Fire Temperature | Natural Color | Night Microphysics | Simple WV
 SO2 | True-color + Ch13 (DSA)
 --- | --- 
 <img src="examples/so2.png" width="200px"/> | <img src="examples/true_color_ch13_dsa.png" width="200px"/>
+
+## Install
+Clone the DSAT-Cli Repository:
+```
+git clone https://github.com/uba/DSAT-cli.git
+```
+Go to the source code folder:
+```
+cd DSAT-cli
+```
+Install:
+```
+pip3 install -r requirements.txt
+```
 
 ## Usage
 ```
