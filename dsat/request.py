@@ -25,7 +25,7 @@ def requestImage(url):
             return cache.load(url) # Done!
     try:
         # else, try request...
-        response = requests.get(url, stream=True, timeout=1)
+        response = requests.get(url, stream=True)
         log.info('* Response code:' + str(response.status_code))
         if not response.ok:
             log.info('** Tile not found **')
@@ -79,7 +79,7 @@ def getImage(date, product, time, level, tilesx, tilesy, queue=None):
 # Note: Multi-thread version
 def getImages(dates, product, level, tilesx, tilesy, nProcess=Config.nProcesses):
     queue, processes, images = mp.Queue(), [], []
-    for date in dates:
+    for date in tqdm(dates, desc='Processing images', ascii=True, unit='image'):
         log.info('Processing date ' + date.strftime('%Y/%m/%d %H:%M'))
         p = mp.Process(target=getImage, name=date.strftime('%Y%m%d%H%M'),
             args=(date.strftime('%Y%m%d'), product, date.strftime('%H%M'), level, tilesx, tilesy, queue))
