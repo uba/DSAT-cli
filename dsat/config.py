@@ -5,6 +5,9 @@
 __author__ = 'Douglas Uba'
 __email__  = 'douglas.uba@inpe.br'
 
+import multiprocessing
+from PIL import Image
+
 """DSAT-Cli Configuration."""
 
 class Config:
@@ -27,5 +30,7 @@ class Config:
     useCache = True
     cacheDir = '.cache/'
     defaultProduct = 'true_color_ch13_dsa'
+    missingTileImage = Image.new('RGBA', (tileSize, tileSize), (0,0,0,0))
+    nProcesses =  multiprocessing.cpu_count()
 
 Config = Config()
