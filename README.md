@@ -104,6 +104,8 @@ optional arguments:
   --version, -v         show program's version number and exit
 ```
 
+**Tip:** You can search *tile-extent* numbers here [Tiles](http://www.cptec.inpe.br/dsat/?tiles=true&options=false).
+
 ## Example Usage
 
 ```bash
