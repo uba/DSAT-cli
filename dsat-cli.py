@@ -46,6 +46,9 @@ if __name__ == '__main__':
     #> Speed-animation
     parser.add_argument('--speed', help='Frame rate, i.e. time between two consecutive frames. Default: 0.5 (in seconds)',
         type=float, dest='speed', default=Config.frameRate, required=False)
+    #> Number of processes
+    parser.add_argument('--processes', help='Number of processes to use for image requests. Default: Number of CPUs',
+        type=int, dest='processes', default=Config.nProcesses, required=False)
     #> Output
     parser.add_argument('--output', '-o', help='Output filename to save resut',
         type=str, dest='output', required=True)
@@ -95,7 +98,7 @@ if __name__ == '__main__':
     log.info('Using cache: ' + str(Config.useCache))
 
     # Let's go!
-    images = getImages(dates, args.product, args.level, tilesx, tilesy)
+    images = getImages(dates, args.product, args.level, tilesx, tilesy, args.processes)
     log.info('Saving result to file: ' + args.output)
     if len(images) == 1:
         images[0].save(args.output)
