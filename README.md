@@ -63,24 +63,27 @@ SO2 | True-color + Ch13 (DSA)
 ## Usage
 ```
 dsat-cli.py --help
-usage: dsat-cli [-h] --product PRODUCT --date DATE [-i I] [--time-step TIME] --level {2,3,4,5,6,7}
-                [--tiles-extent xmin ymin xmax xmax] [--speed SPEED] --output OUTPUT [--verbose] [--version]
+usage: dsat-cli [-h]
+                [--product {ch01,ch02,ch03,ch04,ch05,ch06,ch07,ch08,ch09,ch10,ch11,ch12,ch13,ch14,ch15,ch16,ch08_cpt_WVCOLOR35,ch09_cpt_WVCOLOR35,ch10_cpt_WVCOLOR35,ch13_cpt_IR4AVHRR6,ch13_cpt_DSA,airmass,ash,cloud_phase_eumetsat,day_cloud_phase_jma,convective_storm,day_snow_fog,differential_wv,dust,fire_temperature,natural_color,night_microphysics,simple_wv,so2,true_color_ch13_dsa}]
+                [--date DATE] [-i I] [--time-step TIME] [--level {2,3,4,5,6,7}] [--tiles-extent xmin ymin xmax ymax]      
+                [--speed SPEED] [--processes PROCESSES] --output OUTPUT [--verbose] [--version]
 
 DSAT-Cli. Copyright (C) 2021-2022 INPE.
 
 optional arguments:
   -h, --help            show this help message and exit
-  --product PRODUCT, -p PRODUCT
-                        Product that will be retrieved
+  --product, -p         Product that will be retrieved
   --date DATE, -d DATE  Desired image datetime. Format: YYYYMMDDhhmm
   -i I                  Number of images that will be requested from the given date as start.
   --time-step TIME, -t TIME
                         Interval of image capture times in minutes. (default 10)
   --level {2,3,4,5,6,7}, -l {2,3,4,5,6,7}
                         Level (zoom) that will be retrieved
-  --tiles-extent xmin ymin xmax xmax
+  --tiles-extent xmin ymin xmax ymax
                         Optional tiles extent
   --speed SPEED         Frame rate, i.e. time between two consecutive frames. Default: 0.5 (in seconds)
+  --processes PROCESSES
+                        Number of processes to use for image requests. Default: Number of CPUs
   --output OUTPUT, -o OUTPUT
                         Output filename to save resut
   --verbose             Increase output verbosity
