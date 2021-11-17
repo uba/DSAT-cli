@@ -128,7 +128,7 @@ dsat-cli.py -p true_color_ch13_dsa -d 202111121200 -i 18 -l 6 --tiles-extent 34 
 # Donwload animation (Start 2021/11/12 - 12:00 UTC + 17 images, step 10 min) Brasília - DF at level 7
 dsat-cli.py -p ch02 -d 202111091200 -i 18 -l 7 --tiles-extent 63 55 63 55 -o brasilia-l7-anim.gif
 ```
-<img src="examples/brasilia-l7-anim.gif" width="400px"/>
+<img src="examples/brasilia-l7-anim.gif" width="256px"/>
 
 ## License
 Copyright (C) 2020-2021 INPE.
